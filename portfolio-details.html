@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Travaux réalisés</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link href="assets/img/kimetsumus2.png" rel="icon" />
+    <link href="assets/img/kimetsumus2.png" rel="apple-touch-icon" />
+
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+          <a href="index.html">MusFolio</a>
+          <img
+            id="imgportfolio"
+            src="./assets/img/kimetsumus2.png "
+            height="27px"
+            width="27px"
+            alt=""
+          />
+        </h1>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
+            <
+            <li><a id="cvLink" class="nav-link scrollto" href="#CV">CV</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="hero hero-single route bg-image"
+      style="background-image: url(assets/img/overlay-bg.jpg)"
+    >
+      <div class="overlay-mf"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <h2 class="hero-title mb-4">Portfolio Details</h2>
+            <ol class="breadcrumb d-flex justify-content-center">
+              <li class="breadcrumb-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item active">Portfolio Details</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/bioregulacionesp.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/bioregulacionfr.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/puertasnaron.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Web design Front and Back</li>
+                  <li><strong>Client</strong>: BTM & PuertasNaron</li>
+                  <li><strong>Project date</strong>: 23 Janvier 2023</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="biorregulacion-terapeutica-manual.com/">BTM ESP</a>
+                  </li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="https://bioregulation-therapeutique-manuelle.com/"
+                      >BTM FR</a
+                    >
+                  </li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="https://puertasautomaticasnaron.es/"
+                      >Puertas Naron</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Web Desing Front&Back-end</h2>
+                <p>
+                  En tant que
+                  <strong>développeur Web full-stack junior</strong>, je ne
+                  m'occupe uniquement de la création et du design des pages web,
+                  mais je gérer également l’ensemble de l’environnement
+                  d’hébergement. Depuis Serveur <strong>VPS</strong> (Virtual
+                  Private Server) configuration du panneau
+                  <strong>cPanel</strong> mise en œuvre et gestion, je m'assure
+                  que les l’infrastructure est robuste et efficace. De plus, mon
+                  travail va au-delà de l’apparence visuelle des pages. je mets
+                  en œuvre Stratégies de <strong>SEO </strong> (Search Engine
+                  Optimization) pour améliorer la visibilité des moteurs de
+                  recherche et garantir que les sites Web sont facilement
+                  accessibles et pertinents pour leur public cible. En bref, mon
+                  approche globale englobe à la fois le développement web, du
+                  frontend au backend, ainsi que le gestion et optimisation de
+                  l'environnement d'hébergement, garantissant un fonctionnement
+                  fluide et des performances optimales pour tous les pages que
+                  je développe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright <strong>Mus</strong>. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="cvModal"
+      tabindex="-1"
+      aria-labelledby="cvModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cvModalLabel">Curriculum Vitae (CV)</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="assets/img/DévEloppeur Web.pdf"
+              width="100%"
+              height="600px"
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
