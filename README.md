@@ -1,10 +1,21 @@
-<center>Portfolio V1 FR</center>
-<center><p>This Same Portfolio but in French</p></center>
+<center><h1>Pokemon APi Get Random </h1></center>
+
+<center>Fun Project wit Pokemon API</center>
+
 <ul>
-  <li>Rights (DEVFOLIO)</li>
-  <li>Fremwork: <strong>BOOSTRAP 5</strong></li>
-  <li>Webpage: <a href="https://musportfolio.formationdevweb.fr/">https://musportfolio.formationdevweb.fr/</a></li>
+        <p>
+            <li>   Webpage: <a href="https://pokemonapi.musportfolio.formationdevweb.fr/">https://pokemonapi.musportfolio.formationdevweb.fr/</a>
+            </li>
+         </p>
 </ul>
+        
+    
+
+
+
+           
+
 <p align="center">
-  <img height="400px" width="400px" src="https://github.com/Mus9617/PortfolioFR/raw/main/assets/img/kimetsumus2.png" alt="Pikachu">
+  <img    height=450px  widith=450px     src="https://github.com/Mus9617/Api-Pokemon/raw/main/assets/img/pikachu.png" alt="Pikachu" >
 </p>
+
