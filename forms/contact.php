@@ -1,34 +1,34 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $subject = strip_tags(trim($_POST["subject"]));
+    $message = trim($_POST["message"]);
 
-  $receiving_email_address = 'speede078@gmail.com';
+ 
+    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+        http_response_code(400);
+        echo "Veuillez remplir tous les champs du formulaire.";
+        exit;
+    }
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    
+    $to = "contact@musportfolio.formationdevweb.fr"; 
+    
+    $headers = "De: $name <$email>\r\n";
+    $headers .= "Répondre à: $email\r\n";
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    
+    if (mail($to, $subject, $message, $headers)) {
+        http_response_code(200);
+        echo "Merci ! Votre message a été envoyé avec succès.";
+    } else {
+        http_response_code(500);
+        echo "Oops ! Il y a eu un problème lors de l'envoi du message. Veuillez vérifier les journaux du serveur pour plus de détails.";
+    }
+} else {
+    http_response_code(403);
+    echo "Il y a eu un problème avec votre demande. Veuillez réessayer.";
+}
 ?>
