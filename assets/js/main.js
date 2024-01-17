@@ -181,6 +181,7 @@ import { output } from "./output.js";
 document.getElementById("cvLink").addEventListener("click", function () {
   var myModal = new bootstrap.Modal(document.getElementById("cvModal"));
   myModal.show();
+  console.log(myModal);
 });
 
 var textarea = $(".term");
