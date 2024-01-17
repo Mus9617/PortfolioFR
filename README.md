@@ -18,7 +18,7 @@
         </a>
       </li>
        <p align="center">
-  <img    height=350px  widith=350px   padding-top:5px     src="https://github.com/Mus9617/PortfolioFR/raw/.skipthis/Captura.PNG" alt="PortdolioFR" >
+  <img    height=350px  widith=350px   padding-top:5px     src="https://github.com/Mus9617/PortfolioFR/raw/main/.skipthis/Captura.PNG" alt="PortdolioFR" >
 </p>
 
 </ul>
