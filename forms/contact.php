@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     
-    $to = "contact@musportfolio.formationdevweb.fr"; 
+    $to = "speede078@gmail.com"; 
     
     $headers = "De: $name <$email>\r\n";
     $headers .= "Répondre à: $email\r\n";
